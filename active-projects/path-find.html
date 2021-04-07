@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Active Projects | Path Find</title>
+    <link rel="icon" href="/media/iconLB.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+
+  <body>
+    <body>
+      <div class="topnav">
+        <a href="/index.html">Home</a>
+        <a class="active" href="/active-projects.html">Active Projects</a>
+        <a href="/project-archive.html">Project Archive</a>
+        <a href="/contact.html">Resume and Contact</a>
+        <a href="/about-site.html">About the Site</a>
+      </div>
+
+      <h1>Path Finding</h1>
+
+      <div class="page-summery">
+        This is a very general project to approach the problem of node path
+        finding. I use several different languages including C++, Lua and
+        Gdscript and have several different programs with different
+        functionality and varying degrees of success.
+      </div>
+
+      <div class="section-header">
+        <h1>
+          TIMELINE
+        </h1>
+      </div>
+
+      <!--    Date Break   -->
+      <div class="date">
+        <h2>
+          Wednesday July 22, 2020
+        </h2>
+      </div>
+
+      <div class="left-align">
+        <h3>Chernobyl</h3>
+        <p>
+          Using c++ and map functionality there is a much more compleat way to
+          calculate the number of moves it will take to get to a particular
+          tile. Instead of calculating the number of steps based on the two
+          points which would not take into account any obstacles in between the
+          points it is better to start at the origin and step outwards in every
+          possible direction and record the number of steps. This method allows
+          for obstacles of irregular shape to be considered.
+        </p>
+        <p>
+          This is the method that I implemented in Chernobyl. There is a master
+          map of all coordinate values which are represented in a pair
+          container. Mapped to each coordinate there is a step value. The
+          program starts at the origin and then proceeds to check the nodes
+          above, below, to the right and to the left of it. If these nodes are
+          apart of the master map and they do not already have an assigned value
+          the current step count is saved and the point is saved into another
+          map where all previous points are saved. At the end of the loop the
+          previous points map is saved in a current points map and the step
+          counter is increased. The loop then starts at the top of the current
+          points map and completes the same procedure for each node.
+        </p>
+        <p>
+          This will then step through each possible node on the map. When
+          encountering an obstacle the algorithm simply steps around the edge
+          and records the proper step value.
+        </p>
+        <p>
+          This creates a singular heat map that all other entities can use to
+          path find towards or away from the origin using simple logic. The
+          algorithm is far from being efficient. It can complete 25600 node
+          calculations in just under 1000ms on a 3GHz processor.
+        </p>
+        <p style="text-indent: 5%;">
+          Github Repo:
+          <a href="https://github.com/dj-ryan/PathFind-Chernobyl.git">link</a>
+        </p>
+      </div>
+
+      <!--    Date Break   -->
+      <div class="date">
+        <hr />
+        <h2>
+          July 2020
+        </h2>
+      </div>
+
+      <div class="left-align">
+        <h3>Lua script</h3>
+
+        <p>
+          The main inspiration behind writing this in lua script was to be able
+          to port it over to a game called Crayta. This script is able when
+          given a matrix, a player position and a goal position to find the
+          shortest rout to the goal. It handles any number of convex obstacles
+          such as a square or circle. The basic functionality of the algorithm
+          calculates a heat map based on the distance from all tiles to the
+          goal. This is calculated using the coordinates of the goal and the
+          coordinates of the tile. Then some very basic movement logic chooses
+          the largest value of all neighboring tiles. Any obstacles are given a
+          value of 0 and are therefore never chosen.
+        </p>
+
+        <p>
+          The problem arises when trying to handel concave shapes when the
+          player starts inside the obstacle or the goal is inside the obstacle.
+          This is because the heat map does not take into account back tracking.
+          It only calculates the raw distance from the goal.
+        </p>
+        <p>
+          The solution that I have begun developing is treating the open end or
+          the "entrance" of the concave obstacle as a intermediate goal. Once
+          this has been reached a new value matrix is calculated on the inside
+          of the obstacle and the process is repeated.<br />
+        </p>
+        <p style="text-indent: 5%;">
+          Github Repo:
+          <a href="https://github.com/dj-ryan/PathFind-Lua.git">link</a>
+        </p>
+      </div>
+
+      <div class="section-header">
+        <h1>
+          DOCUMENTS AND CODE
+        </h1>
+      </div>
+
+      
+
+
+      <p style="text-align: center;">
+        Last Modified: 7/29/2020
+      </p>
+
+      <footer>
+        <div class="footer-left-align">
+          Contact:<br />
+          David Ryan<br />
+          <a href="mailto:davidryan@davidryan.info">davidryan@davidryan.info</a>
+        </div>
+        &copy; Copyright 2020 <a href="davidryan.info">davidryan.info</a>
+      </footer>
+    </body>
+  </body>
+</html>

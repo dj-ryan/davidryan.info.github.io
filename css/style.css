@@ -1,0 +1,149 @@
+/* website colors
+
+Dark Blue:  #114e92
+Blue:       #0f8ddd
+Light Blue: #34c1ee
+Green:      #37c757
+
+
+*/
+
+body {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+.page-summery {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.section-header h1 {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.section-header {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  background-color: #114e92;
+}
+
+.date {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.left-align {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+
+.footer-left-align {
+  text-align: left;
+}
+
+.timeline h1 {
+  color: #114e92;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.topnav {
+  position: sticky;
+  overflow: hidden;
+  background-color: #114e92;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition-duration: 150ms;
+}
+
+.topnav a:hover {
+  background-color: #0f8ddd;
+  transition-duration: 100ms;
+}
+
+.topnav a.active {
+  background-color: #34c1ee;
+}
+
+.align-summery-box {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.summery-box {
+  position: relative;
+  border: 3px solid #114e92;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  transition-duration: 200ms;
+}
+
+.summery-box:hover {
+  transition-duration: 100ms;
+  margin-left: -3%;
+  margin-right: -3%;
+  border-color: #0f8ddd;
+  background-color: whitesmoke;
+}
+
+.column {
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  width: 60%;
+}
+
+.right-column {
+  width: 40%;
+  height: 100%;
+}
+
+footer {
+  position: relative;
+  text-align: right;
+  margin-top: 15px;
+  padding: 15px 15px;
+  background-color: #114e92;
+  color: white;
+}
+
+footer a {
+  color: white;
+}

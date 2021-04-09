@@ -5,13 +5,14 @@
     <link rel="icon" href="https://i.imgur.com/qEMutsV.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script src="/lib/utils.js"></script>
   </head>
 
   <body>
     <div class="topnav">
       <a href="/index.html">Home</a>
-      <a class="active" href="/active-projects.html">Active Projects</a>
-      <a href="/project-archive.html">Project Archive</a>
+      <a href="/active-projects.html">Active Projects</a>
+      <a class="active" href="/project-archive.html">Project Archive</a>
       <a href="/contact.html">Resume and Contact</a>
       <a href="/about-site.html">About the Site</a>
     </div>
@@ -25,48 +26,76 @@
       on a input of 10A and 12-48VDC. Each power supply has several safety over
       current and under voltage protections that make each modal a self
       contained high preforming DC to DC converter. I received three of these
-      modals<br />
+      modals
+      <br />
+      <br />
 
-      <!-- Insert Picture of power supply-->
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src=" https://i.imgur.com/16pdKCi.jpg" style="width: 100%" />
+          <div class="caption-text">Front View</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://i.imgur.com/xi1fIu4.jpg" style="width: 100%" />
+          <div class="caption-text">Side View</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://i.imgur.com/ORNFsrB.jpg" style="width: 100%" />
+          <div class="caption-text">Power Strip Detached</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </div>
 
     <div class="section-header">
-      <h1>
-        TIMELINE
-      </h1>
+      <h1>TIMELINE</h1>
     </div>
 
     <!-- Date Break  -->
 
     <div class="date">
-      <h2>
-        Sunday Augest 2, 2020
-      </h2>
+      <h2>Sunday Augest 2, 2020</h2>
     </div>
-      <div class="left-align">
-        <h3>Finished build</h3>
-        The final purchases was the remaining two AC to DC converters. I
-        purchased the exact same model as the first one (24V 10A) I then
-        finished the assembly which consisted of mounting the AC to DC
-        converters using the velcro straps, wiring the outputs to the inputs of
-        the DC to DC converters and wiring the power outlets to the inputs of
-        the AC to DC converters. Mounting the power strip at this point was a
-        challenge. It would have been better to plan ahead for this. I ended
-        unscrewing a screw on two of the AC to DC converters and replacing it
-        with a longer one and a bolt so that it protruded from the side (but was
-        still attached due to the bolt). I then used the mounting sockets on the
-        power strip to slip it onto these protruding screws. The mount was stable
-        enough and extended the side of the power supply a manageable amount.
-      </div>
-
+    <div class="left-align">
+      <h3>Finished build</h3>
+      The final purchases was the remaining two AC to DC converters. I purchased
+      the exact same model as the first one (24V 10A) I then finished the
+      assembly which consisted of mounting the AC to DC converters using the
+      velcro straps, wiring the outputs to the inputs of the DC to DC converters
+      and wiring the power outlets to the inputs of the AC to DC converters.
+      Mounting the power strip at this point was a challenge. It would have been
+      better to plan ahead for this. I ended unscrewing a screw on two of the AC
+      to DC converters and replacing it with a longer one and a bolt so that it
+      protruded from the side (but was still attached due to the bolt). I then
+      used the mounting sockets on the power strip to slip it onto these
+      protruding screws. The mount was stable enough and extended the side of
+      the power supply a manageable amount. Also implemented a USB splitter to
+      allow control of all three units through one port.
+    </div>
 
     <!-- Date Break  -->
 
     <div class="date">
-      <hr>
-      <h2>
-        Tuesday July 24, 2020
-      </h2>
+      <hr />
+      <h2>Tuesday July 24, 2020</h2>
     </div>
 
     <div class="left-align">
@@ -81,23 +110,19 @@
       outlets to run the device at full capacity. To solve this problem I
       purchased a 3 source power strip with an on and off switch as well as
       normal 120 volt plug breakouts so that I can wire them directly. <br />
-      <a
-        href="https://www.amazon.com/gp/product/B07G4DVD3L/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1"
-        >Plug breakout</a
-      ><br />
-      <a
-        href="https://www.amazon.com/gp/product/B000F99CJG/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1"
-        >Power strip</a
-      >
+      <a href="https://imgur.com/zHCLNg3"
+        ><img
+          src="https://i.imgur.com/zHCLNg3.jpg"
+          width="30%"
+          title="source: imgur.com"
+      /></a>
     </div>
 
     <!--    Date Break   -->
 
     <div class="date">
       <hr />
-      <h2>
-        Tuesday June 30, 2020
-      </h2>
+      <h2>Tuesday June 30, 2020</h2>
     </div>
 
     <div class="left-align">
@@ -109,19 +134,14 @@
       perpendicularly into each side of the support for a total of 6. These
       nails will support velcro straps that will strap the AC to DC converters
       down.
-      <br /><a
-        href="https://www.amazon.com/gp/product/B078RYWZMH/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1"
-        >DC power supply</a
-      >
+      <br />
     </div>
 
     <!--    Date Break   -->
 
     <div class="date">
       <hr />
-      <h2>
-        Friday June 12, 2020
-      </h2>
+      <h2>Friday June 12, 2020</h2>
     </div>
 
     <div class="left-align">
@@ -132,16 +152,17 @@
       two posts that stand vertically on a base to make a U shaped frame. The
       DIN rail is mounted on the back side of the frame so that the voltage
       converters can rest on the inside of the U shape.
-      <br /><a
-        href="https://www.amazon.com/gp/product/B01FT485S0/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1"
-        >DIN rail</a
-      >
+      <br />
+      <a href="https://imgur.com/ZmsQnjk"
+        ><img
+          src="https://i.imgur.com/ZmsQnjk.jpg"
+          width="30%"
+          title="source: imgur.com"
+      /></a>
     </div>
 
     <div class="section-header">
-      <h1>
-        PARTS LIST
-      </h1>
+      <h1>PARTS LIST</h1>
     </div>
 
     <div class="left-align">
@@ -187,9 +208,7 @@
     </div>
 
     <div class="section-header">
-      <h1>
-        DOCUMENTS AND CODE
-      </h1>
+      <h1>DOCUMENTS AND CODE</h1>
     </div>
     <div class="left-align">
       <a href="/docs/ds-BPS-ldd240-series.pdf" download>
@@ -206,9 +225,7 @@
       </a>
     </div>
 
-    <div style="text-align: center;">
-      Last modified 7/21/2020
-    </div>
+    <div style="text-align: center">Last modified 7/21/2020</div>
     <footer>
       <div class="footer-left-align">
         Contact:<br />
@@ -217,5 +234,10 @@
       </div>
       &copy; Copyright 2020 <a href="davidryan.info">davidryan.info</a>
     </footer>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+    </script>
   </body>
 </html>

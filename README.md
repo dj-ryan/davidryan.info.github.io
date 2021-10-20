@@ -1,3 +1,4 @@
+# Legacy website (can still be accessed at https://dj-ryan.github.io/davidryan.info.github.io/)
 # davidryan.info-website
 HTML pages for [davidryan.info](davidryan.info)
 
